@@ -9,8 +9,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/csunibo/synta"
-	syntaRegexp "github.com/csunibo/synta/regexp"
+	"github.com/cartabinaria/synta"
+	syntaRegexp "github.com/cartabinaria/synta/regexp"
 	log "log/slog"
 )
 

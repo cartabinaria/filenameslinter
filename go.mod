@@ -1,11 +1,13 @@
-module github.com/csunibo/filenameslinter
+module github.com/cartabinaria/filenameslinter
 
-go 1.20
+go 1.22
+
+toolchain go1.23.2
 
 require (
-	github.com/csunibo/synta v0.1.2
+	github.com/cartabinaria/synta v0.2.0
 	github.com/liamg/memoryfs v1.6.0
-	github.com/stretchr/testify v1.8.4
+	github.com/stretchr/testify v1.9.0
 )
 
 require (

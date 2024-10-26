@@ -9,10 +9,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/csunibo/synta"
+	"github.com/cartabinaria/synta"
 	log "log/slog"
 
-	"github.com/csunibo/filenameslinter"
+	"github.com/cartabinaria/filenameslinter"
 )
 
 func main() {

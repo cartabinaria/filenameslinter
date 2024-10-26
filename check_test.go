@@ -3,7 +3,7 @@ package filenameslinter
 import (
 	"testing"
 
-	"github.com/csunibo/synta"
+	"github.com/cartabinaria/synta"
 	"github.com/liamg/memoryfs"
 	"github.com/stretchr/testify/assert"
 )
