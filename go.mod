@@ -8,9 +8,7 @@
 
 module github.com/cartabinaria/filenameslinter
 
-go 1.22
-
-toolchain go1.23.2
+go 1.24
 
 require (
 	github.com/cartabinaria/synta v0.2.0
