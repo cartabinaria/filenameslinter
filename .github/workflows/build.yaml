@@ -5,11 +5,15 @@
 name: build
 
 on:
+  pull_request:
+    branches:
+      - "main"
+
   push:
     tags:
-      - '**'
+      - "**"
     branches:
-      - 'main'
+      - "main"
 
 jobs:
   docker:
@@ -41,7 +45,7 @@ jobs:
 
       - name: Build and push latest tag
         uses: docker/build-push-action@v3
-        if: startsWith(github.event.ref, 'refs/tags/v') != true
+        if: github.ref == 'refs/heads/main'
         with:
           context: .
           push: true
