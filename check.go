@@ -1,3 +1,11 @@
+// SPDX-FileCopyrightText: 2023 - 2024 Eyad Issa <eyadlorenzo@gmail.com>
+// SPDX-FileCopyrightText: 2023 Luca Tagliavini <luca.tagliavini5@studio.unibo.it>
+// SPDX-FileCopyrightText: 2023 Samuele Musiani <samu@teapot.ovh>
+// SPDX-FileCopyrightText: 2023 - 2024 Stefano Volpe <foxy@teapot.ovh>
+// SPDX-FileCopyrightText: 2023 konova8 <canovasimo@gmail.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-only
+
 package filenameslinter
 
 import (
@@ -9,9 +17,10 @@ import (
 	"sort"
 	"strings"
 
+	log "log/slog"
+
 	"github.com/cartabinaria/synta"
 	syntaRegexp "github.com/cartabinaria/synta/regexp"
-	log "log/slog"
 )
 
 type Options struct {
@@ -21,7 +30,7 @@ type Options struct {
 	FailFast          bool
 }
 
-var kebabRegexp = regexp.MustCompile("^[a-z0-9]+(-[a-z0-9]+)*(\\.[a-z0-9]+)?$")
+var kebabRegexp = regexp.MustCompile(`^[a-z0-9]+(-[a-z0-9]+)*(\.[a-z0-9]+)?$`)
 
 // ReadDir uses the `readDir` method if the filesystem implements
 // `fs.ReadDirFS`, otherwise opens the path and parses it using
