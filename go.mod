@@ -1,5 +1,5 @@
 // SPDX-FileCopyrightText: 2023 - 2024 Eyad Issa <eyadlorenzo@gmail.com>
-// SPDX-FileCopyrightText: 2023 Luca <luca.tagliavini5@studio.unibo.it>
+// SPDX-FileCopyrightText: 2023 Luca Tagliavini <luca@teapot.ovh>
 // SPDX-FileCopyrightText: 2023 Samuele Musiani <samu@teapot.ovh>
 // SPDX-FileCopyrightText: 2023 konova8 <canovasimo@gmail.com>
 // SPDX-FileCopyrightText: 2024 Stefano Volpe <foxy@teapot.ovh>
