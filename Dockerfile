@@ -2,7 +2,6 @@
 # SPDX-FileCopyrightText: 2025 Eyad Issa <eyadlorenzo@gmail.com>
 #
 # SPDX-License-Identifier: AGPL-3.0-only
-# SPDX-License-Identifier: AGPL-3.0-or-later
 
 ARG GO_VERSION=1.24
 ARG ALPINE_VERSION=3.22
