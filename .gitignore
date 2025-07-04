@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2023 Samuele Musiani <samu@teapot.ovh>
+#
+# SPDX-License-Identifier: AGPL-3.0-only
+
 cmd/cmd
 
 # Binaries for programs and plugins

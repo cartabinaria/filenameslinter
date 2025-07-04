@@ -1,3 +1,11 @@
+// SPDX-FileCopyrightText: 2023 - 2024 Eyad Issa <eyadlorenzo@gmail.com>
+// SPDX-FileCopyrightText: 2023 Luca Tagliavini <luca@teapot.ovh>
+// SPDX-FileCopyrightText: 2023 Samuele Musiani <samu@teapot.ovh>
+// SPDX-FileCopyrightText: 2024 Stefano Volpe <foxy@teapot.ovh>
+// SPDX-FileCopyrightText: 2023 konova8 <canovasimo@gmail.com>
+//
+// SPDX-License-Identifier: AGPL-3.0-only
+
 package main
 
 import (
@@ -9,18 +17,22 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/cartabinaria/synta"
 	log "log/slog"
+
+	"github.com/cartabinaria/synta"
 
 	"github.com/cartabinaria/filenameslinter"
 )
 
+var (
+	recursive         = flag.Bool("recursive", true, "Recursively check all files")
+	ensureKebabCasing = flag.Bool("ensure-kebab-casing", true, "Check if directory names are in kebab-case")
+	ignoreDotfiles    = flag.Bool("ignore-dotfiles", true, "Ignore files and folders that start with a dot")
+	syntaDefinition   = flag.String("definition", "", "Synta definition file to check filenames against")
+	failFast          = flag.Bool("failfast", false, "Stop checking as soon as an error is found")
+)
+
 func main() {
-	recursive := flag.Bool("recursive", true, "Recursively check all files")
-	ensureKebabCasing := flag.Bool("ensure-kebab-casing", true, "Check if directory names are in kebab-case")
-	ignoreDotfiles := flag.Bool("ignore-dotfiles", true, "Ignore files and folders that start with a dot")
-	syntaDefinition := flag.String("definition", "", "Synta definition file to check filenames against")
-	failFast := flag.Bool("failfast", false, "Stop checking as soon as an error is found")
 	flag.Parse()
 
 	githubActions := false

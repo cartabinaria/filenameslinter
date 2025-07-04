@@ -1,8 +1,14 @@
+// SPDX-FileCopyrightText: 2023 - 2024 Eyad Issa <eyadlorenzo@gmail.com>
+// SPDX-FileCopyrightText: 2023 Luca Tagliavini <luca@teapot.ovh>
+// SPDX-FileCopyrightText: 2023 Samuele Musiani <samu@teapot.ovh>
+// SPDX-FileCopyrightText: 2023 konova8 <canovasimo@gmail.com>
+// SPDX-FileCopyrightText: 2024 Stefano Volpe <foxy@teapot.ovh>
+//
+// SPDX-License-Identifier: AGPL-3.0-only
+
 module github.com/cartabinaria/filenameslinter
 
-go 1.22
-
-toolchain go1.23.2
+go 1.24
 
 require (
 	github.com/cartabinaria/synta v0.2.0
