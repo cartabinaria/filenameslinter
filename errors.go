@@ -17,5 +17,5 @@ type RegexMatchError struct {
 }
 
 func (e RegexMatchError) Error() string {
-	return fmt.Sprintf("Filname %s doesn't match the regexp %s", e.Filename, e.Regexp)
+	return fmt.Sprintf("Filename %s doesn't match the regexp %s", e.Filename, e.Regexp)
 }
